@@ -1,20 +1,18 @@
 <template>
   <div class="app">
-    <header-navbar/>
+    <ts-main-wrapper />
   </div>
 </template>
 
 <script>
-import headerNavbar from "@/components/header-navbar.vue";
+import TsMainWrapper from "@/components/ts-main-wrapper.vue";
+
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    headerNavbar
-  }
-}
+    TsMainWrapper,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
-
+<style lang="scss" scoped></style>
