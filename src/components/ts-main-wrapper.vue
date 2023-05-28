@@ -21,8 +21,8 @@ export default defineComponent({
 <style scoped lang="scss">
 .ts-main-wrapper {
   max-width: $content-width;
+  background-color: $bgColorPrimary;
   margin: 0 auto;
-  padding: 25px;
   height: 100vh;
 }
 </style>
