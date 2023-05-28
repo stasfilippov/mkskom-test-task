@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MyHeader from '@/components/MyHeader.vue'
+import MyHeader from '@/components/header-navbar.vue'
 
 export default {
   name: 'HomeView',
