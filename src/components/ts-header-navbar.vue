@@ -3,32 +3,49 @@
     <div class="ts-header-navbar__burger">
       <span></span>
     </div>
-    <a href="#" class="ts-header-navbar__logo">Constructor</a>
+    <a class="ts-header-navbar__logo" href="#">Constructor</a>
     <ul class="ts-header-navbar__menu-list">
       <li class="ts-header-navbar__menu-list">
-        <a href="#" class="ts-header-navbar__menu-link">Dashboard</a>
+        <a class="ts-header-navbar__menu-link" href="#">Dashboard</a>
       </li>
       <li class="ts-header-navbar__menu-list">
-        <a href="#" class="ts-header-navbar__menu-link">About Us</a>
+        <a class="ts-header-navbar__menu-link" href="#">About Us</a>
       </li>
       <li class="ts-header-navbar__menu-list">
-        <a href="#" class="ts-header-navbar__menu-link">News</a>
+        <a class="ts-header-navbar__menu-link" href="#">News</a>
       </li>
       <li class="ts-header-navbar__menu-list">
-        <a href="#" class="ts-header-navbar__menu-link">User Policy</a>
+        <a class="ts-header-navbar__menu-link" href="#">User Policy</a>
       </li>
       <li class="ts-header-navbar__menu-list">
-        <a href="#" class="ts-header-navbar__menu-link">Contacts</a>
+        <a class="ts-header-navbar__menu-link" href="#">Contacts</a>
       </li>
     </ul>
     <div class="ts-header-navbar__btn-menu">
       <img src="@/assets/icons/btn-menu.png" alt="btn-menu" />
     </div>
     <ts-input-form />
-    <ts-icon-base
-      class="ts-header-navbar__icon-person"
-      name="person"
-    ></ts-icon-base>
+    <div class="ts-header-navbar__person-group">
+      <ts-icon-base
+        class="ts-header-navbar__icon-person"
+        name="person"
+      ></ts-icon-base>
+      <div class="ts-header-navbar__name-person">Clayton Santos</div>
+    </div>
+    <div class="ts-header-navbar__control-group">
+      <div class="ts-header-navbar__notify-box">
+        <ts-icon-base
+          class="ts-header-navbar__notify-icon"
+          name="notify"
+        ></ts-icon-base>
+      </div>
+      <div class="ts-header-navbar__close-box">
+        <ts-icon-base
+          class="ts-header-navbar__close-icon"
+          name="close"
+        ></ts-icon-base>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,69 +70,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-@import "@/assets/layouts/common/mixins";
-
-.ts-header-navbar {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  padding: 25px;
-  border-bottom: 2px solid #edeff2;
-}
-
-.ts-header-navbar__burger {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  background-color: $bgColorBtns;
-  box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
-  border-radius: 100px;
-}
-
-.ts-header-navbar__burger > span,
-.ts-header-navbar__burger > span::before,
-.ts-header-navbar__burger > span::after {
-  display: block;
-  position: absolute;
-  width: 18px;
-  height: 2px;
-  background-color: #c3cad9;
-}
-
-.ts-header-navbar__burger > span::before {
-  content: "";
-  top: -5px;
-}
-
-.ts-header-navbar__burger > span::after {
-  content: "";
-  top: 5px;
-}
-
-.ts-header-navbar__logo {
-  @include font(#4d5e80, 18px, 700, 30px);
-  text-decoration: none;
-}
-
-.ts-header-navbar__menu-list {
-  display: flex;
-  align-items: center;
-}
-
-.ts-header-navbar__menu-link {
-  @include font(#7d8fb3, 13px, 700, 25px);
-  text-decoration: none;
-}
-
-.ts-header-navbar__btn-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
+<style scoped lang="scss"></style>
