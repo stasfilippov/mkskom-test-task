@@ -34,7 +34,7 @@ export default defineComponent({
   min-width: 430px;
   background-color: $bgColorBtns;
   padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 30px;
 }
 

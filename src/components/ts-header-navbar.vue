@@ -25,15 +25,21 @@
       <img src="@/assets/icons/btn-menu.png" alt="btn-menu" />
     </div>
     <ts-input-form />
+    <ts-icon-base
+      class="ts-header-navbar__icon-person"
+      name="person"
+    ></ts-icon-base>
   </div>
 </template>
 
 <script>
 import tsInputForm from "@/components/ts-input-form.vue";
+import TsIconBase from "@/components/Shared/ts-icon-base.vue";
 
 export default {
   name: "ts-header-navbar",
   components: {
+    TsIconBase,
     tsInputForm, //оперделяет детей для компонента
   },
   props: {
@@ -68,7 +74,7 @@ export default {
   height: 50px;
   cursor: pointer;
   background-color: $bgColorBtns;
-  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 100px;
 }
 
