@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   font-family: $primaryFont;
   font-style: normal;
   font-weight: 700;
@@ -8,4 +9,17 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.ts-main-wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ts-content {
+  display: flex;
+  height: calc(100vh - 100px);
 }

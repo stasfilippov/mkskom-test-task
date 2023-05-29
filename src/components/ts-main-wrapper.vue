@@ -18,10 +18,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
-.ts-main-wrapper {
-  max-width: $content-width;
-  margin: 0 auto;
-  height: 100vh;
-}
-</style>
+<style scoped lang="scss"></style>
