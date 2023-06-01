@@ -28,7 +28,7 @@
     <div class="ts-header-navbar__person-group">
       <ts-icon-base
         class="ts-header-navbar__icon-person"
-        name="person"
+        name="person-header"
       ></ts-icon-base>
       <div class="ts-header-navbar__name-person">Clayton Santos</div>
     </div>
