@@ -1,6 +1,6 @@
 <template>
   <div class="ts-person-control-content">
-    <div class="ts-person-control-content__content">
+    <div class="ts-person-control-content__top">
       <div class="ts-person-control-content__header">
         <div class="ts-person-control-content__btns">
           <div class="ts-person-control-content__person-box">
@@ -18,18 +18,121 @@
         </div>
         <div class="ts-person-control-content__person-info">
           <ts-progress-bar :percent="circleValue" />
-          <div class="ts-person-control-content__person-image-box">
-            <img
-              class="ts-person-control-content__person-image"
-              src="@/assets/images/avatar1.jpg"
-              alt="avatar-image"
-            />
+          <h2 class="ts-person-control-content__name">Hello Alfred Bryant</h2>
+          <p class="ts-person-control-content__email">adrain.nader@yahoo.com</p>
+        </div>
+      </div>
+      <div class="ts-person-control-content__main">
+        <div class="ts-person-control-content__menu">
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="dashboard"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link"
+                >Dashboard</a
+              >
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="notes"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link">Notes</a>
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="invoice"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link"
+                >Invoice</a
+              >
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="files"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link">Files</a>
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="events"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link"
+                >Events</a
+              >
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="teams"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link">Teams</a>
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="massage"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link"
+                >Massage</a
+              >
+            </div>
+          </div>
+          <div class="ts-person-control-content__menu-item">
+            <div class="ts-person-control-content__item-wrapper">
+              <ts-icon-base
+                class="ts-sidebar-nav-content__item-icon"
+                name="settings"
+              ></ts-icon-base>
+              <a href="#" class="ts-person-control-content__menu-link"
+                >Settings</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="ts-person-control-content__main"></div>
     </div>
-    <div class="ts-person-control-content__footer"></div>
+    <div class="ts-person-control-content__footer">
+      <div class="ts-person-control-content__contacts">
+        <ts-icon-base
+          class="ts-sidebar-nav-content__item-icon"
+          name="phone"
+        ></ts-icon-base>
+        <ts-icon-base
+          class="ts-sidebar-nav-content__item-icon"
+          name="email"
+        ></ts-icon-base>
+        <ts-icon-base
+          class="ts-sidebar-nav-content__item-icon"
+          name="reader-mode"
+        ></ts-icon-base>
+        <ts-icon-base
+          class="ts-sidebar-nav-content__item-icon"
+          name="telegram"
+        ></ts-icon-base>
+        <ts-icon-base
+          class="ts-sidebar-nav-content__item-icon"
+          name="whatsup"
+        ></ts-icon-base>
+      </div>
+    </div>
   </div>
 </template>
 <script setup>
@@ -37,7 +140,7 @@ import { ref } from "vue";
 import TsIconBase from "@/components/Shared/ts-icon-base.vue";
 import tsProgressBar from "@/components/Shared/ts-progress-bar.vue";
 
-const circleValue = ref(60);
+const circleValue = ref(75);
 // eslint-disable-next-line
 </script>
 

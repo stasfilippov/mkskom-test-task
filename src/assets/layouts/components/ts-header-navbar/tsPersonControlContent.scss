@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 30px 60px;
   min-width: 360px;
 
-  &__content {
+  &__top {
     width: 100%;
   }
 
@@ -22,37 +23,82 @@
     height: 40px;
   }
 
+  &__name {
+    @include font($colorTextDark, 16px, 700, 30px);
+  }
+
+  &__email {
+    @include font($colorTextLight, 14px, 700, 30px);
+    margin-bottom: 40px;
+  }
+
+  &__main {
+    max-width: 244px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    min-height: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu-link {
+    @include font($colorTextLight, 12px, 700, 20px);
+  }
+
   &__person-info {
     position: relative;
+    flex-direction: column;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ts-person-control-content__menu {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #edeff2;
+  border-radius: 15px;
+
+  &-item {
+    display: flex;
+    min-height: 120px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 50%;
   }
 
-  &__progress-ring,
-  &__progress-ring {
-    position: absolute;
-    border-radius: 50%;
+  &-item:nth-child(2n + 1) {
+    border-right: 2px solid #edeff2;
+    border-bottom: 2px solid #edeff2;
   }
 
-  &__progress-ring-static {
+  &-item:nth-child(2n) {
+    border-bottom: 2px solid #edeff2;
   }
 
-  &__progress-ring-dynamic {
-    stroke-dasharray: 10px 20px;
-    box-shadow: 0px 10px 30px rgba(255, 102, 51, 0.1);
+  &-item:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
+}
 
-  &__person-image-box {
-    max-width: 110px;
-    max-height: 110px;
-    border-radius: 50%;
-  }
+.ts-person-control-content__footer {
+  width: 100%;
+  border: 2px solid #edeff2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+}
 
-  &__person-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: inherit;
-  }
+.ts-person-control-content__contacts {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
