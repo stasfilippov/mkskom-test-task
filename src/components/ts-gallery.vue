@@ -1,5 +1,14 @@
 <template>
-  <div class="ts-gallery"></div>
+  <div class="ts-gallery">
+    <div class="ts-gallery__wrapper">
+      <div class="ts-gallery__sidebar">
+        <button class="ts-gallery__btn"></button>
+        <ul class="ts-gallery__menu">
+          li
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

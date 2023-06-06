@@ -70,6 +70,12 @@
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
+
+    &:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 
   &-item:nth-child(2n + 1) {
