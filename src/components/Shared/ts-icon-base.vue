@@ -212,14 +212,13 @@
     width="16"
     height="20"
     viewBox="0 0 16 20"
-    fill="none"
+    fill="#C3CAD9"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M2 0C0.9 0 0.01 0.9 0.01 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6.83C16 6.3 15.79 5.79 15.41 5.42L10.58 0.59C10.21 0.21 9.7 0 9.17 0H2ZM9 6V1.5L14.5 7H10C9.45 7 9 6.55 9 6Z"
-      fill="#C3CAD9"
     />
   </svg>
   <svg
@@ -372,6 +371,10 @@
       fill="#29CC39"
     />
   </svg>
+  <svg v-else-if="name === 'folder'" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.59 0.59C8.21 0.21 7.7 0 7.17 0H2C0.9 0 0.01 0.9 0.01 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V4C20 2.9 19.1 2 18 2H10L8.59 0.59Z" fill="#C3CAD9"/>
+  </svg>
+
 </template>
 
 <script>
