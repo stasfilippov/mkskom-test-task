@@ -131,7 +131,12 @@
     border: none;
     @include font(#adb8cc, 12px, 700, 20px);
 
+    &:focus {
+      outline: none;
+    }
+
     &::placeholder {
+      font-family: "Roboto", sans-serif;
       @include font(#adb8cc, 12px, 700, 20px);
     }
   }

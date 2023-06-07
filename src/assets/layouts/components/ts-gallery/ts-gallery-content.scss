@@ -1,27 +1,79 @@
 .ts-gallery-content {
   width: 100%;
-  padding: 25px 20px;
 
   &__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 20px 20px 20px;
+    border-bottom: 2px solid $borderColor;
   }
 
   &__navbar-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-width: 136px;
+    gap: 10px;
   }
 
   &__display-contr {
     display: flex;
-    gap: 10px;
     align-items: center;
-    padding: 6px 10px;
+    background: $bgColorBtns;
+    border: 2px solid $borderColor;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid $borderColor;
+    padding: 6px 5px 6px 10px;
+  }
+
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px 6px 5px;
+  }
+
+  &__delete-btn {
+    @extend .btn-control;
+    border: 2px solid $borderColor;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__form-group {
     background: #ffffff;
     border: 2px solid #f5f6f7;
-    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+    padding: 8px 15px;
+  }
+
+  &__icon-search {
+    margin-right: 16px;
+  }
+
+  &__input {
+    text-decoration: none;
+    border: none;
+    max-width: 90px;
+    @include font(#7d8fb3, 10px, 900, 20px);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      @include font(#7d8fb3, 10px, 900, 20px);
+    }
   }
 }
