@@ -2,7 +2,7 @@
   <div class="input-form">
     <form class="input-form-group">
       <span class="input-form-group__btn-search">
-        <img src="@/assets/icons/btn-search-input.png" alt="" />
+        <ts-icon-base name="search" />
       </span>
       <input
         type="text"
@@ -18,9 +18,13 @@
 
 <script>
 import { defineComponent } from "vue";
+import tsIconBase from "@/components/Shared/ts-icon-base.vue";
 
 export default defineComponent({
   name: "ts-input-form",
+  components: {
+    tsIconBase,
+  },
 });
 </script>
 

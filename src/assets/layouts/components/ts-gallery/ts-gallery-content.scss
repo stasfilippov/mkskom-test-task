@@ -1,0 +1,27 @@
+.ts-gallery-content {
+  width: 100%;
+  padding: 25px 20px;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 136px;
+  }
+
+  &__display-contr {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 10px;
+    background: #ffffff;
+    border: 2px solid #f5f6f7;
+    border-radius: 100px;
+  }
+}

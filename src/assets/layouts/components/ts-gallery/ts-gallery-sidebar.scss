@@ -1,0 +1,121 @@
+.ts-gallery {
+  &__sidebar {
+    display: flex;
+    min-width: 290px;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #f5f6f7;
+  }
+
+  &__sidebar-top {
+    width: 100%;
+    padding: 30px 20px 0 20px;
+    border-bottom: 2px solid #f5f6f7;
+  }
+
+  &__sidebar-header {
+    width: 100%;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 13px 27px;
+    width: inherit;
+    margin-bottom: 45px;
+    background: $colorPrimaryContent;
+    border: 2px solid $colorPrimaryContent;
+    box-shadow: 0px 10px 30px rgba(255, 102, 51, 0.2);
+    border-radius: 30px;
+  }
+
+  &__btn-icon {
+    fill: rgba(255, 255, 255, 0.5);
+    margin-right: 64px;
+  }
+
+  &__btn-desc {
+    @include font(#ffffff, 12px, 900, 20px);
+  }
+
+  &__sidebar-content {
+    width: 100%;
+    min-height: 490px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-bottom: 20px;
+    padding: 0 20px 0 25px;
+
+    &:last-child {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__item_active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-bottom: 22.5px;
+    border: 2px solid #f5f6f7;
+    padding: 12.5px 20px 12.5px 25px;
+    box-shadow: 0 10px 30px rgba(38, 51, 77, 0.03);
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  &__item-icon {
+    margin-right: 25px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__item-text {
+    @include font($colorTextDark, 13px, 700, 25px);
+  }
+
+  &__item-quantity {
+    @include font(#7d8fb3, 13px, 900, 25px);
+  }
+
+  &__sidebar-content-btn {
+    padding: 0 20px 0 25px;
+  }
+
+  &__sidebar-footer {
+    width: 100%;
+    padding: 30px 20px 0 40px;
+  }
+
+  &__footer-title {
+    @include font($colorTextDark, 13px, 700, 25px);
+    margin-bottom: 30px;
+  }
+
+  &__footer-list {
+    padding-left: 6px;
+  }
+
+  &__footer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__footer-icon {
+    margin-right: 25px;
+  }
+}
