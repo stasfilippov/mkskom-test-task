@@ -47,8 +47,8 @@
   }
 
   &__form-group {
-    background: #ffffff;
-    border: 2px solid #f5f6f7;
+    background: $bgColorBtns;
+    border: 2px solid $borderColor;
     box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
     border-radius: 30px;
     display: flex;
@@ -75,5 +75,13 @@
       font-family: "Roboto", sans-serif;
       @include font(#7d8fb3, 10px, 900, 20px);
     }
+  }
+
+  &__main {
+    width: 100%;
+    padding: 45px 45px 35px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
   }
 }
