@@ -6,7 +6,7 @@ export default defineComponent({
   name: "ts-gallery-content-main",
   components: {},
   props: {
-    items: {
+    itemsFlex: {
       type: Array,
       required: true,
     },
@@ -15,7 +15,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="ts-gallery-content__main">
+  <div class="ts-gallery-content__main-flex">
     <div class="ts-gallery-item" :key="item.id" v-for="item in items">
       <div class="ts-gallery-item__image-box">
         <img :src="item.url" alt="#" class="ts-gallery-item__image" />
