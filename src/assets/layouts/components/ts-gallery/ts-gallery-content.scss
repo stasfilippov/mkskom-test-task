@@ -84,13 +84,4 @@
     flex-wrap: wrap;
     gap: 29px;
   }
-  &__main-grid {
-    width: 100%;
-    height: calc(100% - 91px);
-    padding: 45px 45px 35px 45px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 }

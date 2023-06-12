@@ -166,7 +166,7 @@ export default defineComponent({
           url: "https://via.placeholder.com/600/f66b97",
           thumbnailUrl: "https://via.placeholder.com/150/f66b97",
         },
-      ]
+      ],
     };
   },
 });
@@ -175,8 +175,11 @@ export default defineComponent({
 <template>
   <div class="ts-gallery-content">
     <ts-gallery-content-navbar />
-    <ts-gallery-content-main-flex :itemsFlex="itemsFlex" style="display: none"/>
-    <ts-gallery-content-main-grid/>
+    <ts-gallery-content-main-flex
+      :itemsFlex="itemsFlex"
+      style="display: none"
+    />
+    <ts-gallery-content-main-grid :items-grid="itemsGrid" />
   </div>
 </template>
 

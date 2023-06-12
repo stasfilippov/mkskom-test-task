@@ -16,7 +16,7 @@ export default defineComponent({
 
 <template>
   <div class="ts-gallery-content__main-flex">
-    <div class="ts-gallery-item" :key="item.id" v-for="item in items">
+    <div class="ts-gallery-item" :key="item.id" v-for="item in itemsFlex">
       <div class="ts-gallery-item__image-box">
         <img :src="item.url" alt="#" class="ts-gallery-item__image" />
       </div>
