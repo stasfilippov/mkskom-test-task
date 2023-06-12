@@ -25,6 +25,7 @@ export default defineComponent({
   components: {
     tsIconBase,
   },
+  inject: [],
 });
 </script>
 
