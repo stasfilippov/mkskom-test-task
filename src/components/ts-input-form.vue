@@ -10,7 +10,11 @@
         placeholder="Search Transactions and Documents"
       />
     </form>
-    <button type="submit" class="input-form-group__btn-submit">
+    <button
+      @click="fetchFncGrid()"
+      type="submit"
+      class="input-form-group__btn-submit"
+    >
       <img src="@/assets/icons/btn-submit-input.png" alt="btn-submit-input" />
     </button>
   </div>
@@ -25,7 +29,7 @@ export default defineComponent({
   components: {
     tsIconBase,
   },
-  inject: [],
+  props: ["fetchFncFlex", "fetchFncGrid"],
 });
 </script>
 

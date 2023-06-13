@@ -1,9 +1,9 @@
 <template>
   <div class="ts-gallery-content__main-grid">
     <div
-      :class="'ts-gallery-item-' + item.id"
+      :class="'ts-gallery-item-' + index"
       :key="item.id"
-      v-for="item in itemsGrid"
+      v-for="(item, index) in itemsGrid"
     >
       <div class="ts-gallery-item__image-box">
         <img :src="item.url" alt="#" class="ts-gallery-item__image" />
@@ -55,23 +55,23 @@ export default {
   }
 }
 
-.ts-gallery-item-1 {
+.ts-gallery-item-0 {
   grid-area: one;
 }
 
-.ts-gallery-item-2 {
+.ts-gallery-item-1 {
   grid-area: two;
 }
 
-.ts-gallery-item-3 {
+.ts-gallery-item-2 {
   grid-area: three;
 }
 
-.ts-gallery-item-4 {
+.ts-gallery-item-3 {
   grid-area: four;
 }
 
-.ts-gallery-item-5 {
+.ts-gallery-item-4 {
   grid-area: five;
 }
 </style>
