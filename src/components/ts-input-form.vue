@@ -11,7 +11,7 @@
       />
     </form>
     <button
-      @click="fetchFncGrid()"
+      @click="getPhotos"
       type="submit"
       class="input-form-group__btn-submit"
     >
@@ -30,6 +30,12 @@ export default defineComponent({
     tsIconBase,
   },
   props: ["fetchFncFlex", "fetchFncGrid"],
+  methods: {
+    getPhotos() {
+      this.fetchFncFlex();
+      this.fetchFncGrid();
+    },
+  },
 });
 </script>
 

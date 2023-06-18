@@ -59,11 +59,44 @@
           <div class="ts-gallery__wrapper">
             <ts-gallery-sidebar />
             <div class="ts-gallery-content">
-              <ts-gallery-content-navbar />
-              <ts-gallery-content-main-flex
-                :items-flex="itemsFlex"
-                style="display: none"
-              />
+              <div class="ts-gallery-content__navbar">
+                <div class="ts-gallery-content__navbar-left">
+                  <div class="ts-gallery-content__display-contr">
+                    <div
+                      class="ts-gallery-content__flex"
+                      @click="toggleDisplay"
+                    >
+                      <ts-icon-base name="flex" />
+                    </div>
+                    <div
+                      class="ts-gallery-content__grid"
+                      @click="toggleDisplay"
+                    >
+                      <ts-icon-base name="grid" />
+                    </div>
+                  </div>
+                  <div class="ts-gallery-content__delete-btn">
+                    <ts-icon-base name="trash" />
+                  </div>
+                </div>
+                <div class="ts-gallery-content__navbar-form">
+                  <form class="ts-gallery-content__form-group">
+                    <span class="ts-gallery-content__icon-search">
+                      <ts-icon-base
+                        name="search"
+                        width="13.64"
+                        height="13.65"
+                      />
+                    </span>
+                    <input
+                      type="text"
+                      class="ts-gallery-content__input"
+                      placeholder="Search"
+                    />
+                  </form>
+                </div>
+              </div>
+              <ts-gallery-content-main-flex :items-flex="itemsFlex" />
               <ts-gallery-content-main-grid :items-grid="itemsGrid" />
             </div>
           </div>
@@ -80,7 +113,6 @@ import tsGallerySidebar from "@/components/ts-gallery-sidebar.vue";
 import axios from "axios";
 import tsInputForm from "@/components/ts-input-form.vue";
 import TsIconBase from "@/components/Shared/ts-icon-base.vue";
-import tsGalleryContentNavbar from "@/components/ts-gallery-content-navbar.vue";
 import tsGalleryContentMainFlex from "@/components/ts-gallery-content-main-flex.vue";
 import TsGalleryContentMainGrid from "@/components/ts-gallery-content-main-grid.vue";
 
@@ -89,7 +121,6 @@ export default {
   components: {
     TsGalleryContentMainGrid,
     tsGalleryContentMainFlex,
-    tsGalleryContentNavbar,
     TsIconBase,
     tsInputForm,
     tsGallerySidebar,
@@ -121,6 +152,24 @@ export default {
         this.itemsGrid = response.data;
       } catch (e) {
         alert("Ошибка!");
+      }
+    },
+    toggleDisplay(event) {
+      const flexComponent = document.querySelector(
+        ".ts-gallery-content__main-flex"
+      );
+      const gridComponent = document.querySelector(
+        ".ts-gallery-content__main-grid"
+      );
+
+      if (event.currentTarget.className === "ts-gallery-content__grid") {
+        flexComponent.style.display = "none";
+        gridComponent.style.display = "";
+      } else if (event.currentTarget.className === "ts-gallery-content__flex") {
+        flexComponent.style.display = "";
+        gridComponent.style.display = "none";
+      } else {
+        return;
       }
     },
   },
