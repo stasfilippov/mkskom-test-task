@@ -26,10 +26,7 @@
         <div class="ts-header-navbar__btn-menu">
           <img src="@/assets/icons/btn-menu.png" alt="btn-menu" />
         </div>
-        <ts-input-form
-          :fetch-fnc-flex="fetchItemsFlex"
-          :fetch-fnc-grid="fetchItemsGrid"
-        />
+        <ts-input-form @getNumber="getPhotos" />
         <div class="ts-header-navbar__person-group">
           <ts-icon-base
             class="ts-header-navbar__icon-person"
@@ -144,24 +141,27 @@ export default {
     };
   },
   methods: {
-    async fetchItemsFlex() {
-      try {
-        const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/albums/1/photos?_limit=16"
-        );
-        this.itemsFlex = response.data;
-      } catch (e) {
-        alert("Ошибка!");
-      }
-    },
-    async fetchItemsGrid() {
-      try {
-        const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/albums/2/photos?_limit=5"
-        );
-        this.itemsGrid = response.data;
-      } catch (e) {
-        alert("Ошибка!");
+    async getPhotos(number) {
+      if (number !== "") {
+        try {
+          const response = await axios.get(
+            `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=16`
+          );
+          this.itemsFlex = response.data;
+        } catch (e) {
+          alert("Ошибка!");
+        }
+
+        try {
+          const response = await axios.get(
+            `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=5`
+          );
+          this.itemsGrid = response.data;
+        } catch (e) {
+          alert("Ошибка!");
+        }
+      } else {
+        alert("Заполните форму!");
       }
     },
     toggleDisplay(event) {

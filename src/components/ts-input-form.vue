@@ -6,6 +6,7 @@
       </span>
       <input
         type="text"
+        v-model="album"
         class="input-form-group__input-search"
         placeholder="Search Transactions and Documents"
       />
@@ -29,11 +30,16 @@ export default defineComponent({
   components: {
     tsIconBase,
   },
+  data() {
+    return {
+      album: "",
+    };
+  },
   props: ["fetchFncFlex", "fetchFncGrid"],
   methods: {
     getPhotos() {
-      this.fetchFncFlex();
-      this.fetchFncGrid();
+      this.$emit("getNumber", this.album);
+      this.album = "";
     },
   },
 });
