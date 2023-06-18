@@ -28,7 +28,7 @@ export default {
 
 <style scoped lang="scss">
 .ts-gallery-content__main-grid {
-  height: calc(100% - 91px);
+  height: 100%;
   width: 100%;
   padding: 45px 45px 35px 45px;
   display: grid;

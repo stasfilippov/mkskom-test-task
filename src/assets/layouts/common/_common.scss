@@ -49,3 +49,7 @@ a {
     display: flex;
   }
 }
+
+.ts-gallery-content__wrapper-grid {
+  height: calc(100% - 91px);
+}

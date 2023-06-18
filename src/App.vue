@@ -96,8 +96,18 @@
                   </form>
                 </div>
               </div>
-              <ts-gallery-content-main-flex :items-flex="itemsFlex" />
-              <ts-gallery-content-main-grid :items-grid="itemsGrid" />
+              <div
+                class="ts-gallery-content__wrapper-flex"
+                style="display: none"
+              >
+                <ts-gallery-content-main-flex :items-flex="itemsFlex" />
+              </div>
+              <div
+                class="ts-gallery-content__wrapper-grid"
+                style="display: none"
+              >
+                <ts-gallery-content-main-grid :items-grid="itemsGrid" />
+              </div>
             </div>
           </div>
         </div>
@@ -156,17 +166,17 @@ export default {
     },
     toggleDisplay(event) {
       const flexComponent = document.querySelector(
-        ".ts-gallery-content__main-flex"
+        ".ts-gallery-content__wrapper-flex"
       );
       const gridComponent = document.querySelector(
-        ".ts-gallery-content__main-grid"
+        ".ts-gallery-content__wrapper-grid"
       );
 
       if (event.currentTarget.className === "ts-gallery-content__grid") {
         flexComponent.style.display = "none";
-        gridComponent.style.display = "";
+        gridComponent.style.display = "block";
       } else if (event.currentTarget.className === "ts-gallery-content__flex") {
-        flexComponent.style.display = "";
+        flexComponent.style.display = "block";
         gridComponent.style.display = "none";
       } else {
         return;
