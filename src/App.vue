@@ -142,26 +142,22 @@ export default {
   },
   methods: {
     async getPhotos(number) {
-      if (number !== "") {
-        try {
-          const response = await axios.get(
-            `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=16`
-          );
-          this.itemsFlex = response.data;
-        } catch (e) {
-          alert("Ошибка!");
-        }
+      try {
+        const response = await axios.get(
+          `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=16`
+        );
+        this.itemsFlex = response.data;
+      } catch (e) {
+        alert("Ошибка!");
+      }
 
-        try {
-          const response = await axios.get(
-            `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=5`
-          );
-          this.itemsGrid = response.data;
-        } catch (e) {
-          alert("Ошибка!");
-        }
-      } else {
-        alert("Заполните форму!");
+      try {
+        const response = await axios.get(
+          `https://jsonplaceholder.typicode.com/albums/${number}/photos?_limit=5`
+        );
+        this.itemsGrid = response.data;
+      } catch (e) {
+        alert("Ошибка!");
       }
     },
     toggleDisplay(event) {

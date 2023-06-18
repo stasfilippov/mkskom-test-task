@@ -6,7 +6,7 @@
       </span>
       <input
         type="text"
-        v-model="album"
+        v-model.trim="album"
         class="input-form-group__input-search"
         placeholder="Search Transactions and Documents"
       />
@@ -24,6 +24,8 @@
 <script>
 import { defineComponent } from "vue";
 import tsIconBase from "@/components/Shared/ts-icon-base.vue";
+import { useVuelidate } from "@vuelidate/core";
+import { maxValue, numeric, required } from "@vuelidate/validators";
 
 export default defineComponent({
   name: "ts-input-form",
@@ -32,15 +34,31 @@ export default defineComponent({
   },
   data() {
     return {
+      v$: useVuelidate(),
       album: "",
     };
   },
   props: ["fetchFncFlex", "fetchFncGrid"],
   methods: {
     getPhotos() {
-      this.$emit("getNumber", this.album);
-      this.album = "";
+      this.v$.$validate();
+      if (!this.v$.$error) {
+        this.$emit("getNumber", this.album);
+        this.album = "";
+      } else {
+        alert("Error!");
+        this.album = "";
+      }
     },
+  },
+  validations() {
+    return {
+      album: {
+        required,
+        numeric,
+        maxValue: maxValue(100),
+      },
+    };
   },
 });
 </script>
