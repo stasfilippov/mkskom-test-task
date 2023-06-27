@@ -40,6 +40,7 @@
               class="ts-header-navbar__icon"
               name="notify"
             ></ts-icon-base>
+            <div class="ts-header-navbar__notify-alert"></div>
           </div>
           <div class="ts-header-navbar__close-box">
             <ts-icon-base

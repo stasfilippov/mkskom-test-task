@@ -35,7 +35,7 @@
               >
             </div>
           </div>
-          <div class="ts-person-control-content__menu-item">
+          <div class="ts-person-control-content__menu-item notify">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
                 class="ts-person-control-content__item-icon"

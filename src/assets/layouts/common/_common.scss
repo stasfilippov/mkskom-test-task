@@ -53,3 +53,18 @@ a {
 .ts-gallery-content__wrapper-grid {
   height: calc(100% - 91px);
 }
+
+.notify {
+  position: relative;
+}
+
+.notify:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff6633;
+}

@@ -13,7 +13,7 @@
           name="favourites"
         ></ts-icon-base>
       </li>
-      <li class="ts-sidebar-nav-content__item">
+      <li class="ts-sidebar-nav-content__item notify">
         <ts-icon-base
           class="ts-sidebar-nav-content__item-icon"
           name="message"
@@ -39,7 +39,7 @@
       </li>
     </ul>
     <ul class="ts-sidebar-nav-content__avatar-group-list">
-      <li class="ts-sidebar-nav-content__item">
+      <li class="ts-sidebar-nav-content__item notify">
         <img
           class="ts-sidebar-nav-content__item-image"
           src="@/assets/images/avatar1.jpg"
