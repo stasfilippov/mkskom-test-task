@@ -1,6 +1,6 @@
 <template>
   <div class="input-form">
-    <form class="input-form-group">
+    <form class="input-form-group" @submit.prevent="getPhotos">
       <span class="input-form-group__btn-search">
         <ts-icon-base name="search" />
       </span>
@@ -12,7 +12,7 @@
       />
     </form>
     <button
-      @click="getPhotos"
+      @click.prevent="getPhotos"
       type="submit"
       class="input-form-group__btn-submit"
     >
@@ -46,7 +46,7 @@ export default defineComponent({
         this.$emit("getNumber", this.album);
         this.album = "";
       } else {
-        alert("Заполните поле и введите число от 1 до 100!");
+        alert("Введите в поле число от 1 до 100!");
         this.album = "";
       }
     },
