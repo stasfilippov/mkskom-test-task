@@ -46,7 +46,7 @@ export default defineComponent({
         this.$emit("getNumber", this.album);
         this.album = "";
       } else {
-        alert("Error!");
+        alert("Заполните поле и введите число от 1 до 100!");
         this.album = "";
       }
     },

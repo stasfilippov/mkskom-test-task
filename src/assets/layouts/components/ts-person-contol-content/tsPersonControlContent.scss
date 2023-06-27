@@ -60,7 +60,8 @@
 .ts-person-control-content__menu {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid #edeff2;
+  border-top: 2px solid #edeff2;
+  border-left: 2px solid #edeff2;
   border-radius: 15px;
 
   &-item {
@@ -70,25 +71,40 @@
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
-
-    &:hover {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-
-  &-item:nth-child(2n + 1) {
     border-right: 2px solid #edeff2;
     border-bottom: 2px solid #edeff2;
+    transition: background 0.2s, transform 0.1s;
   }
 
-  &-item:nth-child(2n) {
-    border-bottom: 2px solid #edeff2;
+  &-item:first-child {
+    border-radius: 15px 0 0 0;
   }
 
-  &-item:nth-last-child(-n + 2) {
-    border-bottom: none;
+  &-item:nth-child(2) {
+    border-radius: 0 15px 0 0;
+  }
+
+  &-item:nth-last-child(2) {
+    border-radius: 0 0 0 15px;
+  }
+
+  &-item:last-child {
+    border-radius: 0 0 15px 0;
+  }
+
+  &-item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background: $bgColorBtns;
+    box-shadow: 0 60px 120px 0 rgba(38, 51, 77, 0.03);
+
+    .ts-sidebar-nav-content__item-icon {
+      fill: $colorPrimaryContent;
+    }
   }
 }
 
