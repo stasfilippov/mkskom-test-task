@@ -39,11 +39,29 @@
     padding: 6px 10px 6px 5px;
   }
 
+  &__grid:hover,
+  &__flex:hover {
+    cursor: pointer;
+
+    .ts-gallery-content__flex-icon,
+    .ts-gallery-content__flex-icon {
+      fill: $colorPrimaryContent;
+    }
+  }
+
   &__delete-btn {
     @extend .btn-control;
     border: 2px solid $borderColor;
     width: 40px;
     height: 40px;
+  }
+
+  &__delete-btn:hover {
+    cursor: pointer;
+
+    .ts-gallery-content__trash-icon {
+      fill: $colorPrimaryContent;
+    }
   }
 
   &__form-group {

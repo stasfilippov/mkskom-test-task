@@ -16,7 +16,7 @@
       type="submit"
       class="input-form-group__btn-submit"
     >
-      <img src="@/assets/icons/btn-submit-input.png" alt="btn-submit-input" />
+      <ts-icon-base name="arrow-right" class="input-form-group__submit-icon" />
     </button>
   </div>
 </template>

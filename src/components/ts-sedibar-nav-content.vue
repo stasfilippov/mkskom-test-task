@@ -69,7 +69,7 @@
       </li>
       <li class="ts-sidebar-nav-content__item">
         <ts-icon-base
-          class="ts-header-navbar__close-icon"
+          class="ts-sidebar-nav-content__item-icon"
           name="plus"
         ></ts-icon-base>
       </li>

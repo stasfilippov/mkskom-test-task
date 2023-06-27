@@ -95,6 +95,15 @@
     padding: 0 20px 0 25px;
   }
 
+  &__sidebar-content-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+    .ts-gallery__item-icon {
+      fill: $colorPrimaryContent;
+    }
+  }
+
   &__sidebar-footer {
     width: 100%;
     padding: 30px 20px 0 40px;
@@ -115,7 +124,21 @@
     margin-bottom: 20px;
   }
 
+  &__footer-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   &__footer-icon {
     margin-right: 25px;
+  }
+
+  &__footer-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+    .ts-gallery__item-icon {
+      fill: $colorPrimaryContent;
+    }
   }
 }

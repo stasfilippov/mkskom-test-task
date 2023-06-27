@@ -23,6 +23,14 @@
     height: 40px;
   }
 
+  &__person-box:hover,
+  &__dots-box:hover {
+    .ts-person-control-content__person-icon,
+    .ts-person-control-content__dots-icon {
+      fill: $colorPrimaryContent;
+    }
+  }
+
   &__name {
     @include font($colorTextDark, 16px, 700, 30px);
   }
@@ -102,8 +110,12 @@
     background: $bgColorBtns;
     box-shadow: 0 60px 120px 0 rgba(38, 51, 77, 0.03);
 
-    .ts-sidebar-nav-content__item-icon {
+    .ts-person-control-content__item-icon {
       fill: $colorPrimaryContent;
+    }
+
+    .ts-person-control-content__menu-link {
+      color: $colorTextDark;
     }
   }
 }
@@ -116,6 +128,17 @@
   align-items: center;
   justify-content: center;
   padding: 15px 25px;
+
+  &-item {
+    transition: 0.2s;
+  }
+
+  &-item:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 }
 
 .ts-person-control-content__contacts {

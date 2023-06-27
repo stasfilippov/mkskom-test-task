@@ -7,19 +7,19 @@
         </div>
         <a class="ts-header-navbar__logo" href="#">Constructor</a>
         <ul class="ts-header-navbar__menu-list">
-          <li class="ts-header-navbar__menu-list">
+          <li class="ts-header-navbar__menu-item">
             <a class="ts-header-navbar__menu-link" href="#">Dashboard</a>
           </li>
-          <li class="ts-header-navbar__menu-list">
+          <li class="ts-header-navbar__menu-item">
             <a class="ts-header-navbar__menu-link" href="#">About Us</a>
           </li>
-          <li class="ts-header-navbar__menu-list">
+          <li class="ts-header-navbar__menu-item">
             <a class="ts-header-navbar__menu-link" href="#">News</a>
           </li>
-          <li class="ts-header-navbar__menu-list">
+          <li class="ts-header-navbar__menu-item">
             <a class="ts-header-navbar__menu-link" href="#">User Policy</a>
           </li>
-          <li class="ts-header-navbar__menu-list">
+          <li class="ts-header-navbar__menu-item">
             <a class="ts-header-navbar__menu-link" href="#">Contacts</a>
           </li>
         </ul>
@@ -37,13 +37,13 @@
         <div class="ts-header-navbar__control-group">
           <div class="ts-header-navbar__notify-box">
             <ts-icon-base
-              class="ts-header-navbar__notify-icon"
+              class="ts-header-navbar__icon"
               name="notify"
             ></ts-icon-base>
           </div>
           <div class="ts-header-navbar__close-box">
             <ts-icon-base
-              class="ts-header-navbar__close-icon"
+              class="ts-header-navbar__icon"
               name="close"
             ></ts-icon-base>
           </div>
@@ -63,17 +63,26 @@
                       class="ts-gallery-content__flex"
                       @click="toggleDisplay"
                     >
-                      <ts-icon-base name="flex" />
+                      <ts-icon-base
+                        name="flex"
+                        class="ts-gallery-content__flex-icon"
+                      />
                     </div>
                     <div
                       class="ts-gallery-content__grid"
                       @click="toggleDisplay"
                     >
-                      <ts-icon-base name="grid" />
+                      <ts-icon-base
+                        name="grid"
+                        class="ts-gallery-content__flex-icon"
+                      />
                     </div>
                   </div>
                   <div class="ts-gallery-content__delete-btn">
-                    <ts-icon-base name="trash" />
+                    <ts-icon-base
+                      name="trash"
+                      class="ts-gallery-content__trash-icon"
+                    />
                   </div>
                 </div>
                 <div class="ts-gallery-content__navbar-form">

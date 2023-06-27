@@ -41,6 +41,14 @@
     top: 5px;
   }
 
+  &__burger:hover {
+    span,
+    span::before,
+    span::after {
+      background-color: $colorPrimaryContent;
+    }
+  }
+
   //==============STYLES LOGO-HEADER
   &__logo {
     @include font(#4d5e80, 18px, 700, 30px);
@@ -51,11 +59,20 @@
   &__menu-list {
     display: flex;
     align-items: center;
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: center;
     margin-right: 25px;
 
     :last-child {
       margin-right: 0;
     }
+  }
+
+  &__menu-item:hover {
+    text-decoration: underline;
   }
 
   &__menu-link {
@@ -102,6 +119,13 @@
     padding: 10px;
     @extend .btn-control;
   }
+
+  &__notify-box:hover,
+  &__close-box:hover {
+    .ts-header-navbar__icon {
+      fill: $colorPrimaryContent;
+    }
+  }
 }
 
 //==============STYLES INPUT-GROUP
@@ -145,6 +169,11 @@
     cursor: pointer;
     background-color: $bgColorBtns;
     border: none;
-    padding: 9px 12px;
+  }
+
+  &__btn-submit:hover {
+    .input-form-group__submit-icon {
+      fill: $colorPrimaryContent;
+    }
   }
 }

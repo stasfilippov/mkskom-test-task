@@ -27,7 +27,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="dashboard"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link"
@@ -38,7 +38,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="notes"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link">Notes</a>
@@ -47,7 +47,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="invoice"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link"
@@ -58,7 +58,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="files"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link">Files</a>
@@ -67,7 +67,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="events"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link"
@@ -78,7 +78,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="teams"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link">Teams</a>
@@ -87,7 +87,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="massage"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link"
@@ -98,7 +98,7 @@
           <div class="ts-person-control-content__menu-item">
             <div class="ts-person-control-content__item-wrapper">
               <ts-icon-base
-                class="ts-sidebar-nav-content__item-icon"
+                class="ts-person-control-content__item-icon"
                 name="settings"
               ></ts-icon-base>
               <a href="#" class="ts-person-control-content__menu-link"
@@ -112,23 +112,23 @@
     <div class="ts-person-control-content__footer">
       <div class="ts-person-control-content__contacts">
         <ts-icon-base
-          class="ts-sidebar-nav-content__item-icon"
+          class="ts-person-control-content__footer-item"
           name="phone"
         ></ts-icon-base>
         <ts-icon-base
-          class="ts-sidebar-nav-content__item-icon"
+          class="ts-person-control-content__footer-item"
           name="email"
         ></ts-icon-base>
         <ts-icon-base
-          class="ts-sidebar-nav-content__item-icon"
+          class="ts-person-control-content__footer-item"
           name="reader-mode"
         ></ts-icon-base>
         <ts-icon-base
-          class="ts-sidebar-nav-content__item-icon"
+          class="ts-person-control-content__footer-item"
           name="telegram"
         ></ts-icon-base>
         <ts-icon-base
-          class="ts-sidebar-nav-content__item-icon"
+          class="ts-person-control-content__footer-item"
           name="whatsup"
         ></ts-icon-base>
       </div>
