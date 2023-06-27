@@ -65,4 +65,19 @@ export default defineComponent({
     @include font($colorTextSecond, 10px, 900, 20px);
   }
 }
+
+.ts-gallery-item:hover {
+  cursor: pointer;
+
+  .ts-gallery-item__image-box {
+    border-color: $colorPrimaryContent;
+  }
+
+  .ts-gallery-item__title {
+    color: $colorPrimaryContent;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+  }
+}
 </style>

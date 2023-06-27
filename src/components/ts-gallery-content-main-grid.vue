@@ -6,14 +6,29 @@
       v-for="(item, index) in itemsGrid"
     >
       <div class="ts-gallery-item__image-box">
+        <div class="ts-gallery-item__burger">
+          <ts-icon-base
+            class="ts-gallery-item__icon"
+            name="burger"
+          ></ts-icon-base>
+        </div>
+        <div class="ts-gallery-item__share">
+          <ts-icon-base
+            class="ts-gallery-item__icon"
+            name="share"
+          ></ts-icon-base>
+        </div>
         <img :src="item.url" alt="#" class="ts-gallery-item__image" />
       </div>
     </div>
   </div>
 </template>
 <script>
+import TsIconBase from "@/components/Shared/ts-icon-base.vue";
+
 export default {
   name: "ts-gallery-content__main-grid",
+  components: { TsIconBase },
   props: {
     itemsGrid: {
       type: Array,
@@ -27,6 +42,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/assets/layouts/common/extends";
+
 .ts-gallery-content__main-grid {
   height: 100%;
   width: 100%;
@@ -40,6 +57,7 @@ export default {
 
 .ts-gallery-item {
   &__image-box {
+    position: relative;
     width: 100%;
     height: 100%;
     box-shadow: 0 2px 5px rgba(38, 51, 77, 0.03);
@@ -53,6 +71,38 @@ export default {
     width: 100%;
     height: 100%;
   }
+}
+
+.ts-gallery-item__burger,
+.ts-gallery-item__share {
+  position: absolute;
+  @extend .btn-control;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.2s;
+}
+
+.ts-gallery-item__burger:hover,
+.ts-gallery-item__share:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.3);
+
+  .ts-gallery-item__icon {
+    fill: #fff;
+  }
+}
+
+.ts-gallery-item__burger {
+  top: 40px;
+  left: 40px;
+}
+
+.ts-gallery-item__share {
+  top: 40px;
+  right: 40px;
 }
 
 .ts-gallery-item-0 {
