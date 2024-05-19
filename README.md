@@ -1,24 +1,17 @@
+
 # mkskom-test-task
+- Представляет собой мини-приложение на VUE 3
+- В качестве **API** использован [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)
 
-## Project setup
-```
-npm install
-```
+## Cсылки
+- ссылка на [хостинге](https://vercel.com/stasfilippovs-projects/mkskom-test-task)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 🚀 Запуск мини приложения
+1. Склонируйте git-репозиторий по ссылке [vk-hacker](https://github.com/stasfilippov/vk-hacker) с помощью команды ```git clone``` на свой компьютер.
+2. Установите все зависимости ```npm install ```
+3. ```npm run serve``` - Compiles and hot-reloads for development
+4. ```npm run build``` - Compiles and minifies for production
+5. ```npm run lint``` - Lints and fixes files
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
